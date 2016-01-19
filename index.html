@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="zh-CN" ng-app="app">
+<head>
+    <meta charset="utf-8">
+    <title>ng-district 省市县三级联动</title>
+    <meta name="author" content="angusfu1126@qq.com">
+    <script src="./node_modules/angular/angular.min.js"></script>
+</head>
+<body ng-controller="AppController">
+    <ng-district
+        province="./data/prov.json"
+        district="./data/dist.json"
+        county="./data/count.json"
+        result="districtInfo"
+        ></ng-district>
+
+    <script src="lib/ng-district.js"></script>
+    <script src="lib/app.js"></script>
+</body>
+</html>
