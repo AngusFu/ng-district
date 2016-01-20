@@ -1,0 +1,19 @@
+<div class="ng-district-wrap">
+    <label>
+        <select ng-model="provinceId" ng-options="prov.Id as prov.Name for prov in provList">
+            <option value="">--请选择---</option>
+        </select>
+    </label>
+
+    <label ng-show="showCity">
+        <select ng-model="cityId" ng-options="city.Id as city.Name for city in cityList">
+            <option value="">--请选择---</option>
+        </select>
+    </label>
+
+    <label ng-show="showDist">
+        <select ng-model="districtId" ng-options="dist.Id as dist.Name for dist in distList">
+            <option value="">--请选择---</option>
+        </select>
+    </label>
+</div>
