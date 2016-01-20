@@ -21,5 +21,8 @@
   "homepage": "https://github.com/AngusFu/ng-district#readme",
   "dependencies": {
     "angular": "^1.4.8"
+  },
+  "devDependencies": {
+    "koa": "^1.1.2"
   }
 }
