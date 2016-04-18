@@ -1,18 +1,18 @@
 # ng-district
 省市县三级联动
 
-## TODO: node server, test case
-
 ## Demo
 
 ```html
 
-<ng-district prov="./data/province.json"
-			 city="./data/district.json"
-    		 dist="./data/couty.json"
-    		 prov-param="ProvinceId"
-    		 city-param="cityId"
-    		 result="districtInfo">
+<ng-district
+	prov="../data/province.json"
+	city="../data/district.json"
+	dist="../data/couty.json"
+	prov-param="ProvinceId"
+	city-param="cityId"
+	result="districtInfo"
+>
 </ng-district>
 
 <script src="ng-district.js"></script>
@@ -30,7 +30,6 @@
 </script>
 
 ```
-
 
 ## 参数说明
 - ```prov``` 省级行政区数据接口

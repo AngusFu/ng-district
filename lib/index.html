@@ -4,19 +4,20 @@
     <meta charset="utf-8">
     <title>ng-district 省市县三级联动</title>
     <meta name="author" content="angusfu1126@qq.com">
-    <script src="./node_modules/angular/angular.min.js"></script>
+    <script src="../node_modules/angular/angular.min.js"></script>
 </head>
 <body ng-controller="AppController">
     <ng-district
-        prov="./data/province.json"
-        city="./data/district.json"
-        dist="./data/couty.json"
+        prov="../data/province.json"
+        city="../data/district.json"
+        dist="../data/couty.json"
         prov-param="ProvinceId"
         city-param="cityId"
         result="districtInfo"
-        ></ng-district>
+    >
+    </ng-district>
 
-    <script src="lib/ng-district.js"></script>
-    <script src="lib/app.js"></script>
+    <script src="./index.js"></script>
+    <script src="./app.js"></script>
 </body>
 </html>
