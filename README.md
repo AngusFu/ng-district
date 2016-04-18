@@ -1,32 +1,36 @@
 # ng-district
 省市县三级联动
 
+```
+	npm install --save ng-district
+```
+
 ## Demo
 
 ```html
 
 <ng-district
-	prov="../data/province.json"
-	city="../data/district.json"
-	dist="../data/couty.json"
-	prov-param="ProvinceId"
-	city-param="cityId"
-	result="districtInfo"
+    prov="../data/province.json"
+    city="../data/district.json"
+    dist="../data/couty.json"
+    prov-param="ProvinceId"
+    city-param="cityId"
+    result="districtInfo"
 >
 </ng-district>
 
 <script src="ng-district.js"></script>
 <script>
-	var app = app.module('app', ['ng.district'])
-	
-	app.controller(function ($scope){
-		$scope.districtInfo = {};
+    var app = app.module('app', ['ng.district'])
+    
+    app.controller(function ($scope){
+        $scope.districtInfo = {};
 
-		//　if a deep watch needed
-		$scope.$watch('districtInfo', function (newVal, oldVal) {
-			// do something
-		}, true);
-	});
+        //　if a deep watch needed
+        $scope.$watch('districtInfo', function (newVal, oldVal) {
+            // do something
+        }, true);
+    });
 </script>
 
 ```
